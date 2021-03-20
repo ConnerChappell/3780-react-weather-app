@@ -9,10 +9,59 @@ body {
 }
 
 .app {
-  
+  height: 100vh;
+  background-image: linear-gradient(to right top, #ff8a00, #ff6f2d, #ff5547, #f63e5d, #e52e71);
+  padding: 25px;
 }
 
 main {
-  min-height: 100vh;
-  background-image: linear-gradient(#ff8a00, #e52e71);
+  background-color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 5px rgb(0 0 0 / .1);
+}
+
+main h1{
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 70px;
+}
+
+
+.search-box {
+  margin-bottom: 25px;
+}
+
+.search-box .search-bar {
+  margin: 0 auto;
+  display: block;
+  width: 75%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 30px;
+  outline: none;
+  transition: .4s ease;
+  font-size: 18px;
+}
+.search-box .search-bar:focus {
+  border-color: #ff8a00;
+}
+
+.current-weather {
+  text-align: center;
+}
+
+.location {
+  font-size: 45px;
+}
+.date {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.temp {
+  font-size: 45px;
 }

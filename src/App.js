@@ -26,14 +26,13 @@ function App() {
     <div className="app">
       <main>
         <h1>Weather App</h1>
-        <p>Please enter a city</p>
 
         <div className="search-box">
-          <input type="text" className="search-bar" placeholder="Search" onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search}/>
+          <input type="text" className="search-bar" placeholder="Enter a City" onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search}/>
         </div>
 
         {(typeof weather.main != "undefined") ? (
-        <div>
+        <div className="current-weather">
           <div className="location-box">
             <div className="location">{weather.name}, {weather.sys.country}</div>
             <div className="date">{new Date().toDateString()}</div>

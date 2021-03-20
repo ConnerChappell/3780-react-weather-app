@@ -40,6 +40,11 @@ function App() {
 
           <div className="weather-box">
             <div className="temp">{Math.round(weather.main.temp)}°F</div>
+            <div className="high-low-box">
+              <div className="temp-high">H: {Math.round(weather.main.temp_max)}°</div>
+              <div className="temp-low">L: {Math.round(weather.main.temp_min)}°</div>
+            </div>
+            <div className="weather">{weather.weather[0].main}</div>
           </div>
         </div>
         ) : ('')}

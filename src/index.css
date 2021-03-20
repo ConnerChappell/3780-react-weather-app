@@ -64,4 +64,17 @@ main h1{
 }
 .temp {
   font-size: 45px;
+  margin-bottom: 10px;
+}
+.high-low-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.high-low-box div {
+  padding: 0 5px;
+}
+.weather {
+  font-size: 18px;
 }
